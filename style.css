@@ -27,25 +27,16 @@ div#principal{
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.384);
     
 }
+/* INÍCIO DA ÁREA ESQUERDA */
 div.quadrado-esquerdo{
     background-color: rgb(255, 255, 255);
     width: 100%;
     border-radius: 15px 0px 0px 15px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 20px;
-}
-div.quadrado-direito{
-    background-color: red;
-    width: 100%;
-    border-radius: 0px 15px 15px 0px;
-}
-div.quadrado-esquerdo div,
-div.quadrado-esquerdo button,
-div.quadrado-esquerdo p{
-    /* background-color: rgba(63, 154, 167, 0.075); */
 }
 p#entrar-com{
     font-size: 4em;
@@ -54,6 +45,31 @@ p#entrar-com{
 div.imagens-redes-sociais{
     display: flex;
     justify-content: center;
+    gap: 30px;
+}
+div.imagens-redes-sociais > div.botoes-redes-sociais{
+    background-color: rgb(231, 231, 231);
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.imagens-redes-sociais > div.botoes-redes-sociais > img{
+    width: 50%;
+    height: 50%;
+}
+div.imagens-redes-sociais > div.botoes-redes-sociais:hover{
+    transform: translateY(-7px);
+    transition-duration: 0.4s;
+    background-color: red;
+}
+div.imagens-redes-sociais > div.botoes-redes-sociais:hover img{
+    filter: invert(150%);
 }
 div.imagens-redes-sociais > img{
     transform: scale(0.8);
@@ -80,6 +96,8 @@ div#login-e-senha-container input{
 }
 div#login-e-senha-container input::placeholder{
     text-indent: 25px;
+    letter-spacing: -1px;
+    font-size: 1.1em;
 }
 p#esqueceu-senha{
     text-align: center;
@@ -89,7 +107,6 @@ div#botao-logar-container{
     justify-content: center;
 }
 button#botao-logar{
-    margin: auto;
     background-color: transparent;
     border: 2px solid red;
     padding: 13px 80px;
@@ -105,3 +122,46 @@ button#botao-logar:hover{
     color: white;
     transition-duration: 0.4s;
 }
+/* FIM DA ÁREA ESQUERDA */
+/* INÍCIO DA ÁREA DIREITA */
+div.quadrado-direito{
+    background-color: red;
+    width: 100%;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+}
+p#ola-aluno{
+    font-size: 4em;
+    text-align: center;
+    color:white;
+}
+p#cadastre-se{
+    text-align: center;
+    color:white;
+    width: 70%;
+}
+div#botao-cadastrar-container{
+    display: flex;
+    justify-content: center;
+}
+button#botao-cadastrar{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 13px 80px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button#botao-cadastrar:hover{
+    background-color: white;
+    color: red;
+    transition-duration: 0.4s;
+}
+/* FIM DA ÁREA DIREITA */
