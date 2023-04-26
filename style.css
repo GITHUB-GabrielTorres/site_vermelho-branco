@@ -7,6 +7,9 @@
 
 *{
     font-family: Inter, serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 main{
@@ -28,7 +31,11 @@ div.quadrado-esquerdo{
     background-color: rgb(255, 255, 255);
     width: 100%;
     border-radius: 15px 0px 0px 15px;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 div.quadrado-direito{
     background-color: red;
@@ -38,9 +45,10 @@ div.quadrado-direito{
 div.quadrado-esquerdo div,
 div.quadrado-esquerdo button,
 div.quadrado-esquerdo p{
+    /* background-color: rgba(63, 154, 167, 0.075); */
 }
 p#entrar-com{
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
 }
 div.imagens-redes-sociais{
@@ -48,15 +56,30 @@ div.imagens-redes-sociais{
     justify-content: center;
 }
 div.imagens-redes-sociais > img{
+    transform: scale(0.8);
+}
+div.imagens-redes-sociais > img{
     margin: 0px 13px;
 }
 p#opcao-conta{
     text-align: center;
 }
-div#login,
-div#senha{
+div#login-e-senha-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+div#login-e-senha-container input{
+    width: 350px;
+    height: 40px;
+    border: none;
+    background-color: #f1f1f1;
+}
+div#login-e-senha-container input::placeholder{
+    text-indent: 25px;
 }
 p#esqueceu-senha{
     text-align: center;
@@ -67,4 +90,18 @@ div#botao-logar-container{
 }
 button#botao-logar{
     margin: auto;
+    background-color: transparent;
+    border: 2px solid red;
+    padding: 13px 80px;
+    border-radius: 50px;
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button#botao-logar:hover{
+    background-color: red;
+    color: white;
+    transition-duration: 0.4s;
 }
