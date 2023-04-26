@@ -5,6 +5,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root{
+    --cor-principal:rgb(0, 163, 95);
+}
+
 *{
     font-family: Inter, serif;
     box-sizing: border-box;
@@ -66,7 +70,7 @@ div.imagens-redes-sociais > div.botoes-redes-sociais > img{
 div.imagens-redes-sociais > div.botoes-redes-sociais:hover{
     transform: translateY(-7px);
     transition-duration: 0.4s;
-    background-color: red;
+    background-color: var(--cor-principal);
 }
 div.imagens-redes-sociais > div.botoes-redes-sociais:hover img{
     filter: invert(150%);
@@ -108,24 +112,24 @@ div#botao-logar-container{
 }
 button#botao-logar{
     background-color: transparent;
-    border: 2px solid red;
+    border: 2px solid var(--cor-principal);
     padding: 13px 80px;
     border-radius: 50px;
-    color: red;
+    color: var(--cor-principal);
     font-weight: bold;
     font-size: 1.2em;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 button#botao-logar:hover{
-    background-color: red;
+    background-color: var(--cor-principal);
     color: white;
     transition-duration: 0.4s;
 }
 /* FIM DA ÁREA ESQUERDA */
 /* INÍCIO DA ÁREA DIREITA */
 div.quadrado-direito{
-    background-color: red;
+    background-color: var(--cor-principal);
     width: 100%;
     border-radius: 0px 15px 15px 0px;
     display: flex;
@@ -161,7 +165,7 @@ button#botao-cadastrar{
 }
 button#botao-cadastrar:hover{
     background-color: white;
-    color: red;
+    color: var(--cor-principal);
     transition-duration: 0.4s;
 }
 /* FIM DA ÁREA DIREITA */
